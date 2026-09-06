@@ -1,0 +1,190 @@
+{
+  "models": [
+    "densenet121",
+    "efficientnet_b3",
+    "swin_tiny"
+  ],
+  "classes": [
+    "Normal",
+    "Bacterial",
+    "Viral"
+  ],
+  "weights": [
+    0.6,
+    0.3,
+    0.1
+  ],
+  "temperatures": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "selection": "maximum mean per-source validation macro-F1; each model weight >= 0.1",
+  "validation": {
+    "accuracy": 0.8068803752931978,
+    "macro_f1": 0.7806021918795114,
+    "per_class": {
+      "Normal": {
+        "precision": 0.8480769230769231,
+        "recall": 0.9284210526315789,
+        "f1": 0.8864321608040201,
+        "support": 475
+      },
+      "Bacterial": {
+        "precision": 0.8505050505050505,
+        "recall": 0.7869158878504673,
+        "f1": 0.8174757281553398,
+        "support": 535
+      },
+      "Viral": {
+        "precision": 0.6439393939393939,
+        "recall": 0.6319702602230484,
+        "f1": 0.6378986866791745,
+        "support": 269
+      }
+    },
+    "confusion_matrix_rows_true_columns_predicted": [
+      [
+        441,
+        12,
+        22
+      ],
+      [
+        42,
+        421,
+        72
+      ],
+      [
+        37,
+        62,
+        170
+      ]
+    ],
+    "by_source": {
+      "BDCXR-3257": {
+        "accuracy": 0.6656441717791411,
+        "macro_f1": 0.6406113132538239,
+        "per_class": {
+          "Normal": {
+            "precision": 0.6226415094339622,
+            "recall": 0.75,
+            "f1": 0.6804123711340206,
+            "support": 88
+          },
+          "Bacterial": {
+            "precision": 0.7928571428571428,
+            "recall": 0.75,
+            "f1": 0.7708333333333334,
+            "support": 148
+          },
+          "Viral": {
+            "precision": 0.5,
+            "recall": 0.4444444444444444,
+            "f1": 0.47058823529411764,
+            "support": 90
+          }
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            66,
+            5,
+            17
+          ],
+          [
+            14,
+            111,
+            23
+          ],
+          [
+            26,
+            24,
+            40
+          ]
+        ]
+      },
+      "GZCMC": {
+        "accuracy": 0.8576329331046312,
+        "macro_f1": 0.8581650795888676,
+        "per_class": {
+          "Normal": {
+            "precision": 0.9685534591194969,
+            "recall": 0.9746835443037974,
+            "f1": 0.9716088328075709,
+            "support": 158
+          },
+          "Bacterial": {
+            "precision": 0.8773946360153256,
+            "recall": 0.8297101449275363,
+            "f1": 0.8528864059590316,
+            "support": 276
+          },
+          "Viral": {
+            "precision": 0.7177914110429447,
+            "recall": 0.785234899328859,
+            "f1": 0.75,
+            "support": 149
+          }
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            154,
+            1,
+            3
+          ],
+          [
+            4,
+            229,
+            43
+          ],
+          [
+            1,
+            31,
+            117
+          ]
+        ]
+      },
+      "HWCMC": {
+        "accuracy": 0.8513513513513513,
+        "macro_f1": 0.7377569881678397,
+        "per_class": {
+          "Normal": {
+            "precision": 0.8666666666666667,
+            "recall": 0.9650655021834061,
+            "f1": 0.9132231404958677,
+            "support": 229
+          },
+          "Bacterial": {
+            "precision": 0.8617021276595744,
+            "recall": 0.7297297297297297,
+            "f1": 0.7902439024390244,
+            "support": 111
+          },
+          "Viral": {
+            "precision": 0.6190476190476191,
+            "recall": 0.43333333333333335,
+            "f1": 0.5098039215686274,
+            "support": 30
+          }
+        },
+        "confusion_matrix_rows_true_columns_predicted": [
+          [
+            221,
+            6,
+            2
+          ],
+          [
+            24,
+            81,
+            6
+          ],
+          [
+            10,
+            7,
+            13
+          ]
+        ]
+      }
+    },
+    "mean_source_macro_f1": 0.7455111270035104
+  }
+}

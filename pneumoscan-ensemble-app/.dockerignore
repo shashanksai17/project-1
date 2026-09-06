@@ -1,0 +1,10 @@
+.git
+.github
+node_modules
+dist
+.venv
+.test-packages
+.cache
+__pycache__
+*.pyc
+models/*/best.pt
