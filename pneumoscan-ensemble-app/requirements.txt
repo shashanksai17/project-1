@@ -1,0 +1,7 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+Pillow==12.0.0
+timm==1.0.19
+torchxrayvision==1.5.4
+huggingface-hub>=0.27,<2

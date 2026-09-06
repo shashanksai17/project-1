@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { margin: 0; min-width: 320px; font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif; background: #fff; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  button:focus-visible, a:focus-visible { outline: 3px solid #8dd7f2; outline-offset: 3px; }
+}
